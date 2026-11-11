@@ -10,7 +10,8 @@ const NAV_ITEMS=[
  ['提携イラストレーター','https://koyukitai.github.io/creator-hub/partners/','✧'],
  ['FAギャラリー','https://koyukitai.github.io/creator-hub/fan-art/','▧'],
  ['FAガイドライン','https://koyukitai.github.io/creator-hub/fa-guidelines/','◇'],
- ['リンク','https://koyukitai.github.io/creator-hub/links/','↗']
+ ['リンク','https://koyukitai.github.io/creator-hub/links/','↗'],
+ ['制作利用規約','https://koyukitai.github.io/creator-hub/terms.html','▤']
 ];
 const css=`
 :root{--creator-hub-width:232px}
@@ -33,8 +34,8 @@ body{padding-left:var(--creator-hub-width)!important}
 }
 `;
 const style=document.createElement('style');style.id='creator-hub-style';style.textContent=css;document.head.append(style);
-const nav=document.createElement('nav');nav.id='creator-hub-nav';nav.setAttribute('aria-label','Creator Hub メニュー');
-const brand=document.createElement('div');brand.className='hub-brand';brand.textContent='🔍🤍 Creator Hub';nav.append(brand);
+const nav=document.createElement('nav');nav.id='creator-hub-nav';nav.setAttribute('aria-label','KOYUKI PORTAL メニュー');
+const brand=document.createElement('div');brand.className='hub-brand';brand.textContent='🔍🤍 KOYUKI PORTAL';nav.append(brand);
 const path=location.pathname.replace(/index\.html$/,'').replace(/\/?$/,'/');
 NAV_ITEMS.forEach(([label,url,icon])=>{const a=document.createElement('a');a.href=url;const u=new URL(url);if(path===u.pathname)a.setAttribute('aria-current','page');const span=document.createElement('span');span.setAttribute('aria-hidden','true');span.textContent=icon;a.append(span,document.createTextNode(label));nav.append(a)});
 const foot=document.createElement('div');foot.className='hub-foot';foot.textContent='小幸たい / Tai Koyuki';nav.append(foot);
