@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f8f6f2" name="theme-color"/><meta content="小幸たいのLive2Dモデリング・オリジナルマウスカーソル制作の料金とご依頼案内。" name="description"/>
+<title>Commission | 小幸たい — KOYUKI TAI</title><style>
+:root{--paper:#f8f6f2;--white:#fff;--ink:#392c27;--brown:#49362f;--muted:#75665f;--red:#a62929;--line:#e3ddd6}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:22px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans JP","Yu Gothic",Meiryo,system-ui,sans-serif;line-height:1.85}
+a{color:inherit}.container{max-width:1000px;margin:auto;padding:0 44px}
+.topbar{border-bottom:1px solid var(--line)}.topbar-inner{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-size:14px;font-weight:750;letter-spacing:.18em;text-decoration:none}.toplink{font-size:12px;text-decoration:none;color:var(--muted)}
+.toplink:hover{color:var(--red)}.intro{padding:92px 0 58px;border-bottom:1px solid var(--line)}
+.eyebrow,.section-label{color:var(--red);font-size:11px;letter-spacing:.2em;font-weight:700}
+.intro h1{font-family:Georgia,"Yu Mincho",serif;font-weight:500;font-size:clamp(50px,8vw,78px);line-height:1.2;margin:18px 0 12px}
+.subtitle{color:var(--muted);font-size:14px;margin:0;max-width:710px}
+.redline{height:2px;width:56px;background:var(--red);margin:26px 0 0}
+.content{padding:48px 0 96px}.choice-label{font-size:12px;color:var(--muted);letter-spacing:.12em;margin:0 0 18px}
+.service-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-bottom:56px}
+.service-link{display:block;text-decoration:none;background:var(--white);border:1px solid var(--line);padding:29px 30px;transition:border-color .2s,transform .2s}
+.service-link:hover{border-color:var(--red);transform:translateY(-2px)}
+.service-link .small{display:block;color:var(--red);font-size:10px;letter-spacing:.17em;font-weight:700}
+.service-link strong{display:block;font-size:22px;margin:8px 0}.service-link .desc{display:block;font-size:12px;color:var(--muted)}
+.service-link .arrow{display:block;text-align:right;color:var(--red);font-size:18px}
+.service-group{margin:0 0 64px}.group-heading{margin-bottom:20px;border-left:3px solid var(--red);padding-left:17px}
+.group-heading h2{font-size:clamp(24px,4vw,32px);font-weight:600;margin:4px 0 0}
+.group-heading p{font-size:12px;color:var(--muted);margin:0}
+.panel{background:var(--white);border:1px solid var(--line);padding:35px 38px;margin-bottom:18px}
+.panel h2{font-size:23px;margin:0 0 12px;font-weight:650}.panel .eyebrow{margin:0 0 12px}
+.hint{font-size:13px;color:var(--muted);margin:8px 0 20px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:24px 0}
+.card{border:1px solid var(--line);padding:20px 17px;background:#fffdfb;min-width:0}
+.card.featured{border-color:#c6a69e}.pill{font-size:10px;color:var(--red);letter-spacing:.13em;font-weight:750}
+.card h3{font-size:18px;margin:6px 0}.price{font-size:25px;font-weight:750;color:var(--red);margin-bottom:14px;white-space:nowrap}
+.price small{font-size:11px;font-weight:400;color:var(--muted)}.spec{list-style:none;margin:0;padding:0}
+.spec li{border-top:1px solid var(--line);padding:9px 0;font-size:12px}
+.spec strong{display:block;font-size:11px;color:var(--muted);font-weight:500}
+.notice{background:#f8f6f2;border-left:2px solid var(--red);padding:15px 19px;font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;border-bottom:1px solid var(--line);padding:12px 9px}
+th{font-size:11px;color:var(--muted);font-weight:650}td:last-child,th:last-child{text-align:right}
+.subheading{font-size:19px!important;margin:38px 0 12px!important}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;text-decoration:none;font-size:13px;font-weight:700;border:1px solid var(--red)}
+.btn.primary{background:var(--red);color:#fff}.btn.secondary{background:transparent;color:var(--red)}
+.flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.step{border:1px solid var(--line);padding:18px}.step .num{font-size:10px;letter-spacing:.1em;color:var(--red)}
+.step strong{font-size:15px}.step .hint{margin:5px 0 0}.cta{background:#f8f6f2;padding:22px}
+.cta h3{margin:0;font-size:18px}.cta p{font-size:13px}
+.footer{background:#eee9e3;border-top:1px solid #ded5cc}.footer-inner{padding:25px 0;display:flex;justify-content:space-between;gap:12px;color:#796a61;font-size:11px;letter-spacing:.08em}
+@media(max-width:760px){.container{padding:0 22px}.topbar-inner{min-height:68px}.intro{padding:78px 0 45px}.content{padding:35px 0 65px}.panel{padding:26px 22px}.cards{grid-template-columns:1fr}.service-nav{grid-template-columns:1fr;gap:12px}.service-link{padding:22px}.flow{grid-template-columns:1fr}.footer-inner{flex-direction:column;gap:4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.service-link{transition:none}}
+
+.header-actions{display:flex;align-items:center;gap:22px}.header-contact{background:var(--red);color:white;text-decoration:none;font-size:12px;font-weight:700;padding:10px 18px;white-space:nowrap}.header-contact:hover,.btn.primary:hover{background:#852020}.hero-actions{margin-top:30px}.service-cta{background:#fff;border:1px solid var(--line);border-left:3px solid var(--red);padding:24px 30px;margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:18px}.service-cta p{margin:0;font-size:13px;color:var(--muted)}.service-cta .btn{white-space:nowrap}@media(max-width:760px){.header-actions{gap:12px}.header-contact{padding:9px 12px;font-size:11px}.service-cta{display:block;padding:22px}.service-cta p{margin-bottom:14px}.service-cta .btn{white-space:normal}.hero-actions .btn{width:100%;text-align:center}}</style></head>
+<body><header class="topbar"><div class="container topbar-inner"><a class="brand" href="https://koyukitai.github.io/creator-hub/">KOYUKI TAI.</a><div class="header-actions"><a class="header-contact" href="https://docs.google.com/forms/d/e/1FAIpQLSfcbGUTmR2b5PlJl2ENxku42doh832oP74gYrasTI5ijRO8jQ/viewform" rel="noopener noreferrer" target="_blank">お問い合わせ</a><a class="toplink" href="https://koyukitai.github.io/creator-hub/">← HOME</a></div></div></header>
+<main><section class="intro"><div class="container"><div class="eyebrow">CREATIVE SERVICES / COMMISSION</div><h1>Commission.</h1><p class="subtitle">制作のご依頼・料金案内。サービスごとにプランと追加オプションをご確認いただけます。</p><div class="redline"></div><div class="actions hero-actions"><a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfcbGUTmR2b5PlJl2ENxku42doh832oP74gYrasTI5ijRO8jQ/viewform" rel="noopener noreferrer" target="_blank">制作のご相談・お問い合わせ ↗</a></div></div></section>
+<div class="container content"><p class="choice-label">01 / サービスを選択</p>
+<nav aria-label="制作サービスを選ぶ" class="service-nav">
+<a class="service-link" href="#live2d"><span class="small">LIVE2D MODELING</span><strong>Live2Dモデリング</strong><span class="desc">モデリングのプラン・料金・追加オプション</span><span class="arrow">↓</span></a>
+<a class="service-link" href="#cursor"><span class="small">ORIGINAL MOUSE CURSOR</span><strong>オリジナルマウスカーソル</strong><span class="desc">カーソル制作のプラン・料金・追加オプション</span><span class="arrow">↓</span></a>
+</nav>
+<div class="service-group" id="live2d"><div class="group-heading"><div class="section-label">02 / LIVE2D MODELING</div><h2>Live2Dモデリング</h2><p>料金プランと追加オプション</p></div>
+<div class="panel"><section id="plans"><div class="eyebrow">LIVE2D MODELING</div><h2>Live2Dモデリング料金表</h2><p class="hint">下記は基本料金の目安です。モデルの仕様・パーツ構成・ご希望内容により変動します。</p><div class="cards"><article class="card"><div class="pill">SIMPLE</div><h3>シンプル</h3><div class="price">¥50,000〜</div><ul class="spec"><li><strong>可動域</strong>中</li><li><strong>遅延バインド</strong>対象外</li><li><strong>差分</strong>基本プラン内なし</li><li><strong>無料修正</strong>2回</li><li><strong>著作権譲渡（希望時）</strong>+¥25,000</li></ul></article><article class="card featured"><div class="pill">BASIC</div><h3>ベーシック</h3><div class="price">¥100,000〜</div><ul class="spec"><li><strong>可動域</strong>中〜高</li><li><strong>遅延バインド</strong>対応</li><li><strong>差分</strong>2つ</li><li><strong>無料修正</strong>4回</li><li><strong>著作権譲渡（希望時）</strong>+¥35,000</li></ul></article><article class="card"><div class="pill">CUSTOM</div><h3>カスタム</h3><div class="price">〜¥200,000 <small>目安</small></div><ul class="spec"><li><strong>可動域</strong>高・要相談</li><li><strong>遅延バインド</strong>個別仕様</li><li><strong>差分</strong>複数・要相談</li><li><strong>無料修正</strong>6回</li><li><strong>著作権譲渡（希望時）</strong>料金内または追加・要相談</li></ul></article></div><div class="notice"><strong>小規模な制作について</strong><p style="margin:6px 0 0">ご予算¥30,000〜のご相談は、正式なプランとは別に制作範囲を調整して個別に検討します。ご希望の内容をフォームからお知らせください。</p></div></section></div><div class="panel"><section id="options"><div class="eyebrow">ADDITIONAL OPTIONS</div><h2>Live2D追加オプション料金表</h2><table class="options"><thead><tr><th>内容</th><th>料金の目安</th></tr></thead><tbody><tr><td>実績非公開</td><td>¥15,000</td></tr><tr><td>髪型差分</td><td>¥10,000〜</td></tr><tr><td>衣装差分</td><td>¥5,000〜</td></tr><tr><td>腕差分</td><td>¥10,000〜</td></tr><tr><td>表情差分</td><td>¥500〜</td></tr><tr><td>規定回数を超える修正</td><td>1回 ¥2,000〜</td></tr><tr><td>早期納品</td><td>制作総額の70〜90%（追加料金）</td></tr></tbody></table><p class="hint">その他の差分・モーション・特殊仕様などは、内容に応じて個別にお見積もりします。</p></section></div><div class="service-cta"><p>Live2Dモデリングの制作について、まずはお気軽にご相談ください。</p><a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfcbGUTmR2b5PlJl2ENxku42doh832oP74gYrasTI5ijRO8jQ/viewform" rel="noopener noreferrer" target="_blank">Live2Dの制作を相談する ↗</a></div></div>
+<div class="service-group" id="cursor"><div class="group-heading"><div class="section-label">03 / ORIGINAL MOUSE CURSOR</div><h2>オリジナルマウスカーソル</h2><p>料金プランと追加オプション</p></div>
+<div class="panel"><section id="mouse-cursor"><div class="eyebrow">ORIGINAL MOUSE CURSOR</div><h2>オリジナルマウスカーソル料金表</h2><p class="hint">ドット絵のオリジナルマウスカーソル制作。用途やアニメーションの有無に合わせて3つのプランから選べます。</p><div class="cards"><article class="card"><div class="pill">SIMPLE</div><h3>シンプル</h3><div class="price">¥5,000〜</div><ul class="spec"><li><strong>デザイン</strong>ドット絵</li><li><strong>カーソル数</strong>ポインター10個</li><li><strong>カラー</strong>白色</li><li><strong>商用利用</strong>不可（追加オプションは要相談）</li></ul></article><article class="card featured"><div class="pill">BASIC</div><h3>ベーシック</h3><div class="price">¥8,000〜</div><ul class="spec"><li><strong>カラー</strong>色変更に対応</li><li><strong>アニメーション</strong>3個まで</li><li><strong>カスタマイズ</strong>通常ポインター変更に対応</li></ul></article><article class="card"><div class="pill">FULL</div><h3>フル</h3><div class="price">〜¥15,000</div><ul class="spec"><li><strong>アニメーション</strong>すべてのカーソルに対応</li><li><strong>カスタマイズ</strong>拡大・縮小変更</li><li><strong>納品内容</strong>静止カーソルも併せて納品</li></ul></article></div><h2 class="subheading" style="">マウスカーソル追加オプション料金表</h2><div class="cursor-options"><table><thead><tr><th>オプション</th><th>料金</th></tr></thead><tbody><tr><td>実績非公開</td><td>¥2,000</td></tr><tr><td>早期納品</td><td>制作総額の70〜90%を追加</td></tr><tr><td>商用利用</td><td>制作総額の70%を追加</td></tr><tr><td>アニメーション化</td><td>1個 ¥1,000</td></tr><tr><td>カーソル追加</td><td>1個 ¥500〜</td></tr><tr><td>紹介用データ（画像・動画）</td><td>¥1,000〜¥1,500</td></tr></tbody></table></div><p class="hint">金額は制作内容により変動します。ご依頼前にお見積もりをご案内します。サイン制作は現在受付停止中のため掲載していません。</p><div class="actions"></div></section></div><div class="service-cta"><p>マウスカーソルの制作について、まずはお気軽にご相談ください。</p><a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfcbGUTmR2b5PlJl2ENxku42doh832oP74gYrasTI5ijRO8jQ/viewform" rel="noopener noreferrer" target="_blank">マウスカーソルの制作を相談する ↗</a></div></div>
+<div class="service-group"><div class="group-heading"><div class="section-label">04 / ORDER GUIDE</div><h2>ご依頼について</h2></div>
+<div class="panel"><section id="process"><div class="eyebrow">HOW TO ORDER</div><h2>ご依頼の流れ</h2><div class="flow"><div class="step"><div class="num">01 / CONTACT</div><strong>お問い合わせ</strong><p class="hint">フォームから制作内容・ご希望を送信</p></div><div class="step"><div class="num">02 / CONSULT</div><strong>内容確認・お見積もり</strong><p class="hint">仕様・納期・料金を相談</p></div><div class="step"><div class="num">03 / PRODUCTION</div><strong>お支払い・制作</strong><p class="hint">合意した条件に従い制作を開始</p></div><div class="step"><div class="num">04 / DELIVERY</div><strong>確認・納品</strong><p class="hint">完成データを確認のうえ納品</p></div></div><p class="hint">詳細な条件は制作利用規約をご確認ください。</p></section></div><div class="panel"><section id="contact"><div class="eyebrow">CONTACT</div><h2>お問い合わせ</h2><div class="cta"><h3>制作依頼・企業案件のご相談はこちら</h3><p>個人のお客様、企業・法人のお客様、PR・出演・タイアップなどのご相談を、共通のフォームから受け付けています。</p><p><a href="https://koyukitai.github.io/creator-hub/terms.html">制作利用規約について</a>もご確認ください。</p><div class="actions"><a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfcbGUTmR2b5PlJl2ENxku42doh832oP74gYrasTI5ijRO8jQ/viewform" rel="noopener noreferrer" target="_blank">お問い合わせフォームを開く ↗</a></div></div></section></div></div>
+<a class="toplink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">↑ ページ上部へ戻る</a>
+</div></main><footer class="footer"><div class="container footer-inner"><span>KOYUKI TAI — CREATOR OFFICIAL WEBSITE</span><span>© KOYUKI TAI</span></div></footer>
+<script src="https://koyukitai.github.io/creator-hub/menu.js"></script></body></html>

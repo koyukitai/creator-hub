@@ -4,8 +4,13 @@
 if(document.getElementById('creator-hub-nav'))return;
 const NAV_ITEMS=[
  ['ホーム','https://koyukitai.github.io/creator-hub/','⌂'],
+ ['プロフィール','https://koyukitai.github.io/creator-hub/profile/','♙'],
  ['制作実績','https://koyukitai.github.io/creator-hub/portfolio/','▣'],
- ['FAギャラリー','https://koyukitai.github.io/creator-hub/fan-art/','▧']
+ ['制作依頼','https://koyukitai.github.io/creator-hub/commission/','✎'],
+ ['提携イラストレーター','https://koyukitai.github.io/creator-hub/partners/','✧'],
+ ['FAギャラリー','https://koyukitai.github.io/creator-hub/fan-art/','▧'],
+ ['FAガイドライン','https://koyukitai.github.io/creator-hub/fa-guidelines/','◇'],
+ ['リンク','https://koyukitai.github.io/creator-hub/links/','↗']
 ];
 const css=`
 :root{--creator-hub-width:232px}

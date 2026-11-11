@@ -1,1 +1,90 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Creator Hub | 小幸たい</title><style>*{box-sizing:border-box}body{margin:0;background:#10151e;color:#eaf0fa;font-family:system-ui,'Noto Sans JP',sans-serif}.home{max-width:950px;margin:auto;padding:80px 35px}.home h1{font-size:clamp(32px,5vw,50px);margin:0 0 16px}.home p{color:#afbdd2;line-height:1.8}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:42px}.card{display:block;background:#1b2839;border:1px solid #3c5069;border-radius:17px;padding:27px;text-decoration:none;color:#edf4ff}.card:hover{border-color:#93c6ff;background:#23354a}.card h2{font-size:21px}.card p{font-size:14px}@media(max-width:760px){.home{padding:90px 20px 40px}}</style></head><body><main class="home"><h1>🔍🤍 Creator Hub</h1><p>小幸たいの制作実績と、いただいたファンアートをまとめたページです。</p><div class="cards"><a class="card" href="portfolio/"><h2>▣ 制作実績</h2><p>Live2Dモデリングなどの制作実績をご覧いただけます。</p></a><a class="card" href="fan-art/"><h2>▧ Fan Art Gallery</h2><p>いただいたファンアートをご紹介しています。</p></a></div></main><script src="https://koyukitai.github.io/creator-hub/menu.js"></script></body></html>
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f6f2">
+<meta name="description" content="小幸たいの制作実績やオリジナルツール、ファンアートを紹介するクリエイター公式サイト。">
+<title>小幸たい | KOYUKI TAI — Creator Official Site</title>
+<style>
+:root{--paper:#f8f6f2;--white:#fff;--ink:#392c27;--brown:#49362f;--muted:#75665f;--red:#a62929;--silver:#c4c0bd;--line:#e3ddd6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans JP","Yu Gothic",Meiryo,system-ui,sans-serif;line-height:1.8}
+a{color:inherit}
+.site{max-width:1120px;margin:auto;padding:0 48px}
+.topbar{border-bottom:1px solid var(--line)}
+.topbar-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.wordmark{font-size:14px;font-weight:750;letter-spacing:.18em;text-decoration:none}
+.topbar-note{font-size:11px;letter-spacing:.2em;color:var(--muted)}
+.hero{min-height:530px;display:flex;align-items:center;position:relative;border-bottom:1px solid var(--line)}
+.hero-inner{position:relative;z-index:1;padding-top:95px;padding-bottom:105px;text-align:left}
+.hero-identity{width:max-content;max-width:100%;margin:0 auto;text-align:left}
+.eyebrow{color:var(--red);font-size:11px;font-weight:700;letter-spacing:.23em;text-transform:uppercase}
+.hero h1{font-size:clamp(58px,9vw,110px);line-height:1.25;letter-spacing:.11em;font-weight:650;margin:24px 0 4px}
+.roman{font-size:clamp(14px,2vw,20px);letter-spacing:.3em;color:var(--muted);font-weight:400}
+.redline{height:2px;width:56px;background:var(--red);margin:34px 0}
+.catch{margin-top:36px!important;font-size:clamp(17px,2.4vw,23px);letter-spacing:.06em;margin:0 0 12px}
+.lead{max-width:none;color:var(--muted);font-size:14px;margin:0;text-align:left}
+.section{padding-top:90px;padding-bottom:95px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:35px}
+.section-index{font-size:11px;color:var(--red);letter-spacing:.2em;font-weight:700}
+.section-title{font-size:clamp(30px,4vw,44px);line-height:1.3;letter-spacing:.02em;margin:8px 0 0;font-family:Georgia,"Yu Mincho",serif;font-weight:500}
+.section-desc{color:var(--muted);font-size:13px;margin:0}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.feature{min-height:265px;background:var(--white);border:1px solid var(--line);padding:33px 35px;display:flex;flex-direction:column;text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}
+.feature:hover{transform:translateY(-4px);border-color:#bbaaa1;box-shadow:0 16px 32px #392c270d}
+.feature-num{font-size:11px;color:var(--red);letter-spacing:.18em}
+.feature h3{font-family:Georgia,serif;font-size:29px;font-weight:500;margin:25px 0 4px}
+.feature p{color:var(--muted);font-size:13px;margin:0}
+.feature-bottom{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--brown);padding-top:30px}
+.arrow{font-size:24px;color:var(--red);line-height:1}
+.feature.feature-primary{border-top:3px solid var(--red)}
+.feature.soon{background:#f1ede8;border-style:dashed}
+.feature.soon h3{color:#76675f}
+.feature.soon .feature-bottom{color:#87776e}
+.lower{border-top:1px solid var(--line);padding-top:50px;padding-bottom:80px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.mini-link{display:flex;align-items:center;justify-content:space-between;text-decoration:none;padding:22px 0;border-bottom:1px solid var(--line);transition:color .2s}
+.mini-link:hover{color:var(--red)}
+.mini-link strong{font-family:Georgia,serif;font-size:24px;font-weight:500}
+.mini-link small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.about-copy{color:var(--muted);font-size:13px;max-width:430px}
+.footer{background:#eee9e3;border-top:1px solid #ded5cc}
+.footer-inner{display:flex;justify-content:space-between;gap:16px;padding-top:25px;padding-bottom:25px;color:#796a61;font-size:11px;letter-spacing:.08em}
+@media(max-width:760px){.site{padding-left:24px;padding-right:24px}.topbar-inner{min-height:70px}.topbar-note{display:none}.hero{min-height:480px}.hero-inner{padding-top:100px;padding-bottom:95px}.hero h1{letter-spacing:.06em}.section{padding-top:65px;padding-bottom:65px}.section-head{display:block}.section-desc{margin-top:12px}.feature-grid,.lower{grid-template-columns:1fr}.feature{min-height:230px;padding:27px}.lower{gap:28px}.footer-inner{flex-direction:column;gap:4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.feature{transition:none}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="site topbar-inner">
+<a class="wordmark" href="https://koyukitai.github.io/creator-hub/" aria-label="小幸たい トップページ">KOYUKI TAI.</a>
+<span class="topbar-note">CREATOR OFFICIAL WEBSITE</span>
+</div></header>
+<main>
+<section class="hero"><div class="site hero-inner">
+<div class="hero-identity"><div class="eyebrow">CREATOR / LIVE2D MODELER</div>
+<h1>小幸たい</h1>
+<div class="roman">KOYUKI TAI</div>
+<div class="redline"></div></div>
+<p class="catch">創作と技術で、アイデアを形に。</p>
+<p class="lead">探偵VTuberとしてゲーム配信などの活動を行いながら、Live2Dモデリングやデジタルコンテンツの制作にも取り組んでいます。</p>
+</div></section>
+<section class="site section" id="works">
+<div class="section-head"><div><div class="section-index">01 / CREATOR HUB</div><h2 class="section-title">Explore My Works</h2></div><p class="section-desc">制作のご依頼から、作品・提携先・ツールまで。</p></div>
+<div class="feature-grid">
+<a class="feature feature-primary" href="https://koyukitai.github.io/creator-hub/commission/"><span class="feature-num">01 — COMMISSION</span><h3>Commission</h3><p>Live2Dモデリング・オリジナルマウスカーソルの料金とご依頼について。</p><div class="feature-bottom"><span>料金・制作依頼を見る</span><span class="arrow" aria-hidden="true">↗</span></div></a>
+<a class="feature" href="https://koyukitai.github.io/creator-hub/partners/"><span class="feature-num">02 — PARTNERS</span><h3>Partner Illustrators</h3><p>提携イラストレーター様のご紹介。作品サンプルや特典、依頼先へのリンクを掲載しています。</p><div class="feature-bottom"><span>提携先を見る</span><span class="arrow" aria-hidden="true">↗</span></div></a>
+<a class="feature" href="https://koyukitai.github.io/creator-hub/portfolio/"><span class="feature-num">03 — WORKS</span><h3>Portfolio</h3><p>Live2Dモデリングなどの制作実績をご紹介します。</p><div class="feature-bottom"><span>制作実績を見る</span><span class="arrow" aria-hidden="true">↗</span></div></a>
+<div class="feature soon"><span class="feature-num">04 — TOOLS</span><h3>Creative Tools</h3><p>オリジナル制作支援ツールを順次公開します。</p><div class="feature-bottom"><span>COMING SOON</span><span aria-hidden="true">＋</span></div></div>
+</div>
+</section>
+<section class="site lower" aria-label="その他のコンテンツ">
+<div><div class="section-index">02 / COMMUNITY</div><a class="mini-link" href="https://koyukitai.github.io/creator-hub/fan-art/"><span><strong>Fan Art</strong><small>いただいたファンアートのギャラリー</small></span><span class="arrow" aria-hidden="true">↗</span></a><a class="mini-link" href="https://koyukitai.github.io/creator-hub/fa-guidelines/"><span><strong>FA Guidelines</strong><small>ファンアート制作のお願いと三面図資料</small></span><span class="arrow" aria-hidden="true">↗</span></a></div>
+<div id="more"><div class="section-index">03 / MORE</div><a class="mini-link" href="https://koyukitai.github.io/creator-hub/profile/"><span><strong>Profile</strong><small>活動情報・ファンネーム・活動タグ</small></span><span class="arrow" aria-hidden="true">↗</span></a><a class="mini-link" href="https://koyukitai.github.io/creator-hub/links/"><span><strong>Links</strong><small>各種SNS・活動リンク</small></span><span class="arrow" aria-hidden="true">↗</span></a></div>
+</section>
+</main>
+<footer class="footer"><div class="site footer-inner"><span>KOYUKI TAI — CREATOR OFFICIAL WEBSITE</span><span>© KOYUKI TAI</span></div></footer>
+<!-- 既存の共通メニューを維持 -->
+<script src="https://koyukitai.github.io/creator-hub/menu.js"></script>
+</body>
+</html>
