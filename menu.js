@@ -11,6 +11,7 @@ const NAV_ITEMS=[
  ['提携イラストレーター','https://koyukitai.github.io/creator-hub/partners/','✧'],
  ['FAギャラリー','https://koyukitai.github.io/creator-hub/fan-art/','▧'],
  ['FAガイドライン','https://koyukitai.github.io/creator-hub/fa-guidelines/','◇'],
+ ['Discord FANサーバー','https://koyukitai.github.io/creator-hub/discord/','☏'],
  ['リンク','https://koyukitai.github.io/creator-hub/links/','↗']
 ];
 const css=`
