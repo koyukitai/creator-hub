@@ -9,6 +9,7 @@ const NAV_ITEMS=[
  ['制作依頼','https://koyukitai.github.io/creator-hub/commission/','✎'],
  ['制作利用規約','https://koyukitai.github.io/creator-hub/terms.html','▤'],
  ['提携イラストレーター','https://koyukitai.github.io/creator-hub/partners/','✧'],
+ ['配布ツール一覧','https://koyukitai.github.io/creator-hub/tools/','▦'],
  ['FAギャラリー','https://koyukitai.github.io/creator-hub/fan-art/','▧'],
  ['FAガイドライン','https://koyukitai.github.io/creator-hub/fa-guidelines/','◇'],
  ['Discord FANサーバー','https://koyukitai.github.io/creator-hub/discord/','☏'],
